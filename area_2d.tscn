@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyfbkot5nqimg"]
+
+[ext_resource type="PackedScene" uid="uid://5m38aqa6nc17" path="res://hero.tscn" id="2_hpfsp"]
+
+[node name="game" type="Area2D"]
+position = Vector2(592, 324)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-27, 24)
+zoom = Vector2(4, 4)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_hpfsp")]
+position = Vector2(-36, 30)
